@@ -1,10 +1,12 @@
 <script setup>
 import { ref } from 'vue'
 import ActivityList from './views/unit-05/ActivityList.vue'
+import AuthorBooks from './views/unit-05/AuthorBooks.vue'
 
 // 练习导航表，新增练习时在这里加一条
 const practiceList = [
-  { id: 'u05-activity', label: '单元 5 · 计算属性与缓存 — 活动列表', component: ActivityList }
+  { id: 'u05-activity', label: '单元 5 · 计算属性与缓存 — 活动列表', component: ActivityList },
+  { id: 'u05-author-books', label: '单元 5 · 计算属性综合作业 — 作者书籍', component: AuthorBooks }
 ]
 
 const current = ref(practiceList[0])
