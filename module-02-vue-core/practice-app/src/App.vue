@@ -2,11 +2,17 @@
 import { ref } from 'vue'
 import ActivityList from './views/unit-05/ActivityList.vue'
 import AuthorBooks from './views/unit-05/AuthorBooks.vue'
+import LoginForm from './views/unit-06/LoginForm.vue'
+import MovableBox from './views/unit-06/MovableBox.vue'
+import HoverText from './views/unit-06/HoverText.vue'
 
 // 练习导航表，新增练习时在这里加一条
 const practiceList = [
   { id: 'u05-activity', label: '单元 5 · 计算属性与缓存 — 活动列表', component: ActivityList },
-  { id: 'u05-author-books', label: '单元 5 · 计算属性综合作业 — 作者书籍', component: AuthorBooks }
+  { id: 'u05-author-books', label: '单元 5 · 计算属性综合作业 — 作者书籍', component: AuthorBooks },
+  { id: 'u06-login', label: '单元 6 · 作业 1 回车登录', component: LoginForm },
+  { id: 'u06-movable-box', label: '单元 6 · 作业 2 方向键移动方块', component: MovableBox },
+  { id: 'u06-hover-text', label: '单元 6 · 作业 3 鼠标悬停文本', component: HoverText }
 ]
 
 const current = ref(practiceList[0])
