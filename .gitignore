@@ -27,3 +27,6 @@ coverage/
 
 # AI 助手本地工作数据
 .workbuddy/
+
+# pnpm store
+.pnpm-store/
